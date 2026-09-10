@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "128927566592",
+    "project_id": "dirigir-agora",
+    "storage_bucket": "dirigir-agora.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:128927566592:android:2e19cde9a7c1ce493901e5",
+        "android_client_info": {
+          "package_name": "br.com.dirigiragora"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCR_6y4aPAai34unJffgJ7KdS7sm3Et9-U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

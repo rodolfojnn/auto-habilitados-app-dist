@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Dirigir Agora - Conectando Instrutores de direção a Alunos</title>
+  <base href="/">
+  <link rel="preconnect" href="https://api.dirigiragora.com.br">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACECtKFiaHwhgDbovrcxV-dJOyqIBjX5s"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+
+    /* GLOBAL STYLES (Injected here for Applet environment) */
+
+    /* Disabled Button Style */
+    button[disabled] {
+      opacity: 0.5;
+      pointer-events: none;
+      cursor: not-allowed;
+    }
+
+    /* --- Angular Form Validation Styles --- */
+
+    /* ERROR STATE (Red) */
+    /* Applies when input is dirty (touched/typed in) and INVALID */
+    input.ng-dirty.ng-invalid,
+    select.ng-dirty.ng-invalid,
+    textarea.ng-dirty.ng-invalid {
+      border-color: #ef4444 !important; /* Tailwind red-500 */
+      color: #ef4444 !important;
+    }
+
+    /* Focus state for invalid inputs */
+    input.ng-dirty.ng-invalid:focus,
+    select.ng-dirty.ng-invalid:focus,
+    textarea.ng-dirty.ng-invalid:focus {
+      border-color: #ef4444 !important;
+      box-shadow: 0 0 0 1px #ef4444 !important;
+      outline: none !important;
+    }
+
+    /* Placeholder color for invalid inputs */
+    input.ng-dirty.ng-invalid::placeholder {
+      color: #fca5a5 !important; /* Tailwind red-300 */
+    }
+
+    /* SUCCESS STATE (Green) */
+    /* Applies when input is dirty (touched/typed in) and VALID */
+    input.ng-dirty.ng-valid,
+    select.ng-dirty.ng-valid,
+    textarea.ng-dirty.ng-valid {
+      border-color: #22c55e !important; /* Tailwind green-500 */
+    }
+
+    /* Focus state for valid inputs */
+    input.ng-dirty.ng-valid:focus,
+    select.ng-dirty.ng-valid:focus,
+    textarea.ng-dirty.ng-valid:focus {
+      border-color: #22c55e !important;
+      box-shadow: 0 0 0 1px #22c55e !important;
+      outline: none !important;
+    }
+  </style>
+
+</head>
+<body class="bg-black dark:bg-gray-900">
+  <app-root></app-root>
+</body>
+</html>

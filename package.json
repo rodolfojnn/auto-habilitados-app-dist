@@ -1,0 +1,49 @@
+{
+  "name": "dirigir-agora",
+  "private": true,
+  "version": "8.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "nvm use 22.12 && npx ng serve --port 4255 --open",
+    "build:android": "nvm use 22.12 && npx ng build && npx cap sync android && npx cap open android",
+    "build:ios": "npx ng build && npx cap sync ios && npx cap open ios",
+    "dev:android": "nvm use 22.12 && ng serve --host=0.0.0.0 --port=4255",
+    "adb:reverse": "adb reverse tcp:4255 tcp:4255",
+    "assets": "npx capacitor-assets generate --android --assetPath src/assets",
+    "version": "C:/laragon/www/jenifer/auto-habilitados-app/android/app/build.gradle"
+  },
+  "dependencies": {
+    "@angular/build": "^21.0.0",
+    "@angular/cli": "^21.0.0",
+    "@angular/common": "^21.0.0",
+    "@angular/compiler": "^21.0.0",
+    "@angular/compiler-cli": "^21.0.0",
+    "@angular/core": "^21.0.0",
+    "@angular/forms": "^21.0.6",
+    "@angular/google-maps": "^21.2.0",
+    "@angular/platform-browser": "^21.0.0",
+    "@angular/router": "^21.0.6",
+    "@capacitor/app": "^7.1.1",
+    "@capacitor/browser": "^7.0.5",
+    "@capacitor/camera": "^7.0.5",
+    "@capacitor/core": "^7.0.0",
+    "@capacitor/ios": "^7.6.8",
+    "@capacitor/push-notifications": "^7.0.4",
+    "@types/google.maps": "^3.58.1",
+    "capacitor-native-settings": "^7.0.1",
+    "dayjs": "^1.11.19",
+    "ngx-mask": "^20.0.3",
+    "rxjs": "^7.8.2"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^7.0.0",
+    "@types/node": "^22.14.0",
+    "autoprefixer": "^10.4.23",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17",
+    "typescript": "5.9",
+    "vite": "^6.2.0"
+  }
+}
